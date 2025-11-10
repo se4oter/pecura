@@ -5,51 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PECURA</title>
   <style>
-    /* 讓整頁置中排列 */
     body {
       margin: 0;
       min-height: 100vh;
       display: flex;
-      align-items: center;          /* 垂直置中 */
-      justify-content: center;      /* 水平置中 */
+      align-items: center;
+      justify-content: center;
       background: #fff;
       color: #222;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Helvetica Neue", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif;
     }
-    /* 垂直堆疊：上圖下字 */
+
     .wrap {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 16px;
+      gap: 20px;
       padding: 24px;
       width: 100%;
       box-sizing: border-box;
     }
-    /* 圖片自適應：不超過螢幕寬/高 */
+
     .hero-img {
       display: block;
-      max-width: min(92vw, 1200px);              /* 不超過視窗寬 */
-      max-height: calc(100vh - 140px);           /* 扣掉上下內距與文字空間，避免超出視窗高 */
+      max-width: min(92vw, 1200px);
+      max-height: calc(100vh - 180px);
       width: auto;
       height: auto;
-      object-fit: contain;                        /* 保持比例 */
+      object-fit: contain;
     }
+
+    /* 新增一個文字容器，限制寬度與圖片相同 */
+    .text-block {
+      max-width: min(92vw, 1200px);
+      text-align: center;
+    }
+
     .note {
       font-size: 1rem;
       letter-spacing: 0.05em;
-      opacity: 0.75;
+      opacity: 0.85;
       text-align: center;
+      line-height: 1.8; /* 調整行距 */
+      margin: 0.5em 0;
+    }
+
+    @media (max-width: 600px) {
+      .note {
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <!-- 換成你的圖片路徑 -->
     <img class="hero-img" src="https://se4oter.github.io/pecura/LOGO.jpg" alt="PECURA" />
-    <div class="note">偵脈科技股份有限公司致力於開發智慧、非侵入式的血管監測系統，以「無創、便捷、即時」為核心理念，推出全球首創「無壓脈帶式夾具感測技術」，結合PPG與ECG雙模整合，能即時分析血管阻塞程度、脈搏波傳導速度與血管年齡。從臨床診斷到居家照護，偵脈科技讓血管健康檢測更輕鬆、更普及，實現早期偵測與長期守護的智慧醫療願景。</div>
-    <div class="note">------即時守護，從偵脈開始------</div>
-    <div class="note">Contact: Jacob.yeh@pecura.com.tw</div>
+
+    <div class="text-block">
+      <div class="note">
+        偵脈科技股份有限公司致力於開發智慧、非侵入式的血管監測系統，以「無創、便捷、即時」為核心理念，推出全球首創「無壓脈帶式夾具感測技術」，結合PPG與ECG雙模整合，能即時分析血管阻塞程度、脈搏波傳導速度與血管年齡。從臨床診斷到居家照護，偵脈科技讓血管健康檢測更輕鬆、更普及，實現早期偵測與長期守護的智慧醫療願景。
+      </div>
+      <div class="note">------ 即時守護，從偵脈開始 ------</div>
+      <div class="note">Contact: Jacob.yeh@pecura.com.tw</div>
+    </div>
   </main>
 </body>
 </html>
