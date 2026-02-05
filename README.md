@@ -1,26 +1,48 @@
 ```mermaid
-usecaseDiagram
-actor User as 使用者
-actor Device as 外部量測硬體裝置
+flowchart LR
 
-rectangle 周邊血管健康評估醫療器材軟體系統 {
-  使用者 -- (啟動系統)
-  使用者 -- (輸入基本量測資料)
-  使用者 -- (開始生理訊號量測)
-  使用者 -- (即時顯示生理訊號)
-  使用者 -- (結束量測)
-  使用者 -- (進行訊號分析與參數計算)
-  使用者 -- (檢視分析結果)
-  使用者 -- (儲存量測與分析資料)
-  使用者 -- (產生與匯出報告)
-  使用者 -- (檢視系統錯誤或提示訊息)
+%% Actors
+User[使用者]
+Device[外部量測硬體裝置]
 
-  Device -- (提供生理訊號資料)
-  Device -- (傳送量測資料至系統)
+%% System boundary
+subgraph 系統[周邊血管健康評估醫療器材軟體系統]
 
-  (開始生理訊號量測) ..> (提供生理訊號資料) : include
-  (即時顯示生理訊號) ..> (提供生理訊號資料) : include
-  (進行訊號分析與參數計算) ..> (驗證資料完整性) : include
-  (儲存量測與分析資料) ..> (資料加密與完整性保護) : include
-}
+  UC1[啟動系統]
+  UC2[輸入基本量測資料]
+  UC3[開始生理訊號量測]
+  UC4[即時顯示生理訊號]
+  UC5[結束量測]
+  UC6[進行訊號分析與參數計算]
+  UC7[檢視分析結果]
+  UC8[儲存量測與分析資料]
+  UC9[產生與匯出報告]
+  UC10[檢視系統錯誤或提示訊息]
+
+  UC11[接收生理訊號資料]
+  UC12[驗證資料完整性]
+  UC13[資料加密與完整性保護]
+
+end
+
+%% Actor interactions
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC5
+User --> UC6
+User --> UC7
+User --> UC8
+User --> UC9
+User --> UC10
+
+Device --> UC11
+
+%% Include relationships
+UC3 --> UC11
+UC4 --> UC11
+UC6 --> UC12
+UC8 --> UC13
+
 ```
