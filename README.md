@@ -1,3 +1,4 @@
+```mermaid
 usecaseDiagram
 actor User as 使用者
 actor Device as 外部量測硬體裝置
@@ -22,3 +23,4 @@ rectangle 周邊血管健康評估醫療器材軟體系統 {
   (進行訊號分析與參數計算) ..> (驗證資料完整性) : include
   (儲存量測與分析資料) ..> (資料加密與完整性保護) : include
 }
+```
