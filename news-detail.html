@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PECURA 偵脈科技｜About</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- Fonts-->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+
+  <!-- Vendors-->
+  <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+
+  <!-- App & fonts-->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+<div class="page-wrap">
+
+  <!-- header（沿用你現有的） -->
+  <header class="header header--fixed">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="index.html"><img src="assets/img/logo1.png" alt=""/></a>
+        </div>
+
+        <div class="header__menu">
+          <nav class="onepage-nav">
+            <ul class="onepage-menu">
+              <li><a href="index.html#id-1">首頁</a></li>
+                <li class="menu-item-has-children">
+                    <a href="about.html" class="menu-parent">
+                    關於我們
+                    <i class="fa fa-angle-down menu-caret" aria-hidden="true"></i>
+                    </a>
+
+                    <ul class="sub-menu">
+                    <li><a href="about.html#about-company">關於偵脈科技</a></li>
+                    <li><a href="about.html#vision-timeline">發展沿革</a></li>
+                    <li><a href="#team-members">創辦成員</a></li>
+                    <li><a href="#cofounders">運營團隊</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="product.html">產品訊息</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+            <div class="navbar-toggle"><span></span><span></span><span></span></div>
+          </nav>
+
+          <div class="lang-switch">
+            <a href="news.html" class="lang-btn is-active">中</a>
+            <a href="news-en.html" class="lang-btn">EN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End / header -->
+
+  <div class="md-content">
+
+    <!-- 小型 Hero（不滿版） -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h1 class="about-title">最新消息</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 裝飾光暈（可刪） -->
+        <div style="
+            position:absolute; right:-120px; top:-120px; width:360px; height:360px;
+            background: rgba(255,255,255,.08); border-radius: 999px; filter: blur(2px);
+        "></div>
+        <div style="
+            position:absolute; left:-140px; bottom:-140px; width:420px; height:420px;
+            background: rgba(255,255,255,.06); border-radius: 999px; filter: blur(2px);
+        "></div>
+    </section>
+
+
+    <!-- ===== News Section ===== -->
+    <div id="newsBlocks"></div>
+
+<!-- Vendors-->
+<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+<script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
+
+<!-- App-->
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
+
+<script>
+(function () {
+  const root = document.getElementById("newsBlocks");
+  if (!root) return;
+
+  const data = {
+    "2": {
+      title: "偵脈科技研發總部盛大開幕！打造1分鐘無壓脈帶血管照護新標竿",
+      date: "2025 年 10 月 31 日",
+      blocks: [
+        {
+            type: "hero",
+            img: "assets/img/news/1/01-group.jpg",
+            caption: "偵脈科技研發總部正式啟動大合影"
+        },
+
+        { 
+            type: "text", html: `
+            <p>2025年10月31日，成大技術衍生新創「偵脈科技」研發總部於成功大學產學創新總中心正式開幕 。開幕茶會現場匯聚近 60 位來自醫界、創投金融界與產學機構的重量級貴賓 ，共同見證全球首創「非侵入式智慧血管監測系統」的營運啟航 。</p>`
+        },
+
+        { 
+        type: "image-right",
+        img: "assets/img/news/1/02-ribbon.jpg",
+        caption: "研發總部開幕剪綵儀式", 
+        html:`<h5 style="margin:0 0 10px;">活動現場三大亮眼成果：</h5>
+            <ul style="margin:0; padding-left:18px; line-height:1.9;">
+            <li><b>1分鐘實機體驗驚豔全場：</b>展出全球首創「無壓脈帶式夾具感測」。透過雙模整合PPG與ECG，系統於 1 分鐘內精準算出 PWV 血管阻塞與血管年齡等指標 ，快速便利的操作設計大獲好評。</li>
+            <li><b>獲讚具「獨角獸」潛力：</b> 成大與南科管理局長官皆高度肯定偵脈科技之技術與團隊，看好其具備成為獨角獸企業的雄厚潛力 。</li>
+            <li><b>商轉進度吸引創投關注：</b> 系統已通過醫療器材電性安規與生物相容性檢測。目前正與成大醫院展開臨床試驗合作，將會持續推動醫材認證申請，2027年即可正式量產上市！</li>
+            </ul>
+        `},
+
+        {
+        type: "gallery",
+        cols: 2,
+        images: [
+            {
+            src: "assets/img/news/1/03-ceo.jpg",
+            caption: "偵脈科技陳玟伶執行長致詞"
+            },
+            {
+            src: "assets/img/news/1/04-founder.jpg",
+            caption: "偵脈科技創辦人葉明龍致詞"
+            }
+        ]
+        },
+
+        { type: "text", html: `
+          <p>本次開幕茶會受到媒體熱烈關注與報導，備受產業與大眾矚目，總計榮獲近30家指標性媒體熱烈報導！包含中央社、經濟日報、聯合報、工商時報以及環球生技等皆給予高度評價，為台灣智慧醫療產業注入一劑強心針。</p>
+          <p>偵脈科技將以此研發總部為基地，持續推動國際法規取證與商業化佈局 。歡迎點擊下方連結，觀看更多開幕盛況與產業深度報導！</p>
+        `},
+
+        { type: "links-marquee", items: [
+        { text: "中央社", href: "https://www.cna.com.tw/news/ahel/202510310163.aspx" },
+        { text: "經濟日報", href: "https://money.udn.com/money/story/5723/9112825" },
+        { text: "聯合報", href: "https://udn.com/news/story/7266/9109248" },
+        { text: "工商時報", href: "https://www.ctee.com.tw/news/20251102700239-431205" },
+        { text: "環球生技", href: "https://news.gbimonthly.com/tw/invest/show.php?num=81169&range=news" },
+        { text: "奧丁丁", href: "https://news.owlting.com/articles/1173454" },
+        { text: "LINE TODAY", href: "https://today.line.me/tw/v3/article/j7gDkjg" },
+        { text: "Yahoo! 奇摩新聞", href: "https://reurl.cc/mkn6rl" },
+        { text: "蕃薯藤", href: "https://n.yam.com/Article/20251031169385" },
+        { text: "PChome Online 新聞", href: "https://news.pchome.com.tw/finance/sunmedia/20251031/index-76189827526012329003.html" },
+        { text: "行銷人", href: "https://reurl.cc/MMv164" },
+        { text: "獨家報導", href: "https://www.scooptw.com/sunmedia/411398/%E5%81%B5%E8%84%88%E7%A7%91%E6%8A%80%E7%A0%94%E7%99%BC%E7%B8%BD%E9%83%A8%E7%9B%9B%E5%A4%A7%E9%96%8B%E5%B9%95-%E6%99%BA%E6%85%A7%E8%A1%80%E7%AE%A1%E7%9B%A3%E6%B8%AC%E9%A0%98%E8%88%AA%E5%85%A8%E7%90%83/" },
+        { text: "商傳媒", href: "https://reurl.cc/Abqn4Y" },
+        { text: "LIFE NEWS 民生電子報", href: "https://lifenews.com.tw/423859/" },
+        { text: "LIFE 生活網", href: "https://life.tw/?app=view&no=2864823" },
+        { text: "警政時報", href: "https://www.tcpttw.com/other/other_industrial/2025/10/31/213839/" },
+        { text: "記者爆料網", href: "https://new-reporter.com/news/91001/" },
+        { text: "火報", href: "https://reurl.cc/QVdnRp" },
+        { text: "AMM 亞洲心動娛樂", href: "https://ammtw.com/90076" },
+        { text: "是新聞", href: "https://reurl.cc/8bG4X7" },
+        { text: "話新聞", href: "https://reurl.cc/rKxdvO" },
+        { text: "台灣線報", href: "https://twline365.com/2025/10/1061558/" },
+        { text: "墨新聞", href: "https://more-news.tw/440771/" },
+        { text: "民聲新聞", href: "https://91postnews.com/life/50808" },
+        { text: "勝利之聲廣播電台", href: "https://www.facebook.com/share/p/17QcU75HZx/?mibextid=wwXIfr" },
+        { text: "放新聞", href: "https://www.fountmedia.io/article/319301" },
+        { text: "產經新聞網", href: "https://share.google/gJe06K9FNXNFbMKYn" },
+        { text: "1111人力銀行", href: "https://www.1111.com.tw/news/jobns/162966" },
+        { text: "迅雷雲新聞網", href: "http://fast-enews.com/?ptype=editor_1&id=38053&sys_no=4" }
+        ]},
+      ]
+    },
+    "3": {
+      title: "醫療級血管檢測走入人群，偵脈科技1分鐘快篩技術於2025醫療展展現強大商機",
+      date: "2025 年 12 月 7 日",
+      blocks: [
+        {
+          type: "hero",
+          img: "assets/img/news/2/01-medical-expo-demo.jpg",
+          caption: "偵脈科技於 2025 醫療展現場展示非侵入式智慧血管監測系統"
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>2025醫療展日前盛大登場，偵脈科技帶著備受矚目的「非侵入式智慧血管監測系統」強勢參展。有別於以往僅作技術展示，本次展會的最大亮點，在於偵脈團隊首度開放民眾親自上機體驗這項前瞻的醫療科技，成功在展場掀起一波智慧血管健康檢測的熱潮。</p>
+          `
+        },
+
+        {
+          type: "gallery",
+          cols: 2,
+          images: [
+            {
+              src: "assets/img/news/2/02-medical-expo-demo.jpg",
+              caption: "現場由團隊成員協助民眾實際體驗血管健康量測流程"
+            },
+            {
+              src: "assets/img/news/2/03-medical-expo-demo.jpg",
+              caption: "民眾於展場近距離了解無壓脈帶式感測器與檢測介面"
+            }
+          ]
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>展會期間，偵脈科技的攤位人潮絡繹不絕，吸引大量民眾排隊參與檢測。體驗者只需將無壓脈帶式感測器輕夾於指尖，短短1分鐘內即可快速且精準地測出血管硬化程度與血管年齡指標。許多民眾在體驗後給予高度評價，紛紛表示相較於傳統需緊綁手臂加壓且耗時的檢測方式，偵脈的產品真正做到了「無痛、快速、零負擔」。</p>
+            <p>熱烈的現場體驗不僅驗證了產品的極致舒適度與操作便利性，更吸引眾多參觀民眾主動詢問產品的預計上市時程與購買管道，充分展現出終端市場對於居家血管照護設備的龐大需求與迫切期待。</p>
+          `
+        },
+
+        {
+          type: "quote",
+          text: "無痛、快速、零負擔。"
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>此次醫療展的空前盛況與熱烈迴響，偵脈團隊未來將全速推進系統的醫療器材法規認證與量產佈局，期盼能早日將這項台灣自主研發的智慧醫療利器普及至大眾市場，為每個家庭提供最便利的日常心血管健康守護。</p>
+          `
+        }
+      ]
+    },
+
+    "4": {
+      title: "偵脈科技榮獲第22屆國家新創獎，獨創無壓脈帶血管監測技術獲國家最高肯定",
+      date: "2025 年 11 月 15 日",
+      blocks: [
+        {
+          type: "hero",
+          img: "assets/img/news/3/01-award-group.jpg",
+          caption: "偵脈科技團隊於第22屆國家新創獎頒獎典禮合影"
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>台灣生醫界榮譽指標「第 22 屆國家新創獎」日前盛大舉行頒獎典禮。偵脈科技憑藉全球首創的「非侵入式智慧血管監測系統」在眾多優秀團隊中脫穎而出，成功奪得國家級創新最高殊榮，展現了深厚的產學研發實力與商業化潛力。</p>
+          `
+        },
+
+        {
+          type: "image-right",
+          img: "assets/img/news/3/02-award-group.jpg",
+          caption: "偵脈科技於頒獎典禮現場接受國家級創新獎項肯定",
+          html: `
+            <p>國家新創獎評審團對偵脈科技的突破性技術給予高度評價。偵脈科技精準切入傳統ABI檢測儀器的臨床痛點，開發出獨家的「無壓脈帶式夾具感測」技術。</p>
+            <p>該系統結合光體積描記法（PPG）與心電圖（ECG）雙模整合量測，搭配 AI 演算法，受測者僅需透過指夾感測1分鐘，即可精準推算脈波傳導速度（PWV）與血管年齡。</p>
+          `
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>這項兼具「快速、無痛、高精準度」的技術優勢，成為本次深獲評審青睞的奪獎關鍵。</p>
+          `
+        },
+
+        {
+          type: "quote",
+          text: "國家級創新肯定，來自技術突破與臨床價值的結合。"
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>此次榮獲國家新創獎的肯定，我們將帶著這份榮耀，加速推展系統的臨床試驗與各國醫療器材法規認證，期盼能將這項台灣自主研發的智慧醫療技術，普及至全球的醫療院所與居家照護機構，為心血管健康帶來更友善、高效的防護網。</p>
+          `
+        }
+      ]
+    },
+
+    "1": {
+      title: "偵脈科技初登場－2025 亞洲生技展獲熱烈迴響",
+      date: "2025 年 7 月",
+      blocks: [
+        {
+          type: "hero",
+          img: "assets/img/news/4/01-forum.jpg",
+          caption: "偵脈科技創辦人於亞洲生技展論壇現場進行專題演講"
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>2025 亞洲生技展（BIO Asia-Taiwan）日前圓滿落幕，由成大技術衍生的新創企業—偵脈科技迎來成立後的首次大型公開亮相。本次展會中，偵脈團隊首度展出全球首創的「非侵入式智慧血管監測系統」，成為會場中備受矚目的焦點。</p>
+          `
+        },
+
+        {
+          type: "image-right",
+          img: "assets/img/news/4/02-booth.jpg",
+          caption: "偵脈科技展位吸引眾多參觀者與產業人士交流",
+          html: `
+            <p>展會期間，偵脈科技創辦人葉明龍教授親自於論壇區進行專題演講，以深入淺出的方式，剖析傳統周邊血管病變（PAD）檢測耗時且易造成病患不適的臨床痛點。</p>
+            <p>同時分享偵脈獨家研發的「無壓脈帶式夾具感測」技術，僅需 1 分鐘即可精準推算血管年齡與阻塞風險，創新的檢測概念引發現場熱烈討論。</p>
+            <p>偵脈科技的「非侵入式智慧血管監測系統」不僅大幅提升檢測效率，更具備高度商業化潛力。展會期間，吸引眾多國內外創投機構與大型醫療院所前往攤位洽談合作。</p>
+            <p>各界代表針對未來的臨床試驗合作、遠距居家照護系統導入，以及海內外市場拓展等議題，表達高度興趣與合作意願。</p>
+            `
+        },
+
+        {
+          type: "text",
+          html: `
+          `
+        },
+
+        {
+          type: "quote",
+          text: "首次公開亮相，即獲市場與產業高度關注"
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>此次參展成功展現了偵脈科技的市場動能。未來，我們將持續推進產品的醫療認證與商業化佈局，期盼攜手更多醫療與投資夥伴，共同打造全球周邊血管健康照護的新未來。</p>
+          `
+        }
+      ]
+    }
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+
+    if (!id) {
+    // 如果沒有 id，就不渲染 detail
+    return;
+    }
+  const news = data[id];
+
+  if (!news) {
+    root.innerHTML = "<div class='container' style='padding:60px 0; text-align:center;'>找不到此篇新聞</div>";
+    return;
+  }
+
+  // 外框（讓版面跟你 about 的 container 一致）
+  root.innerHTML = `
+    <div class="container news-detail-wrap" style="padding: 40px 0 10px;">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <h2 style="margin:0 0 8px; font-size:30px; line-height:1.25;">${news.title}</h2>
+          <div style="opacity:.75; margin-bottom:18px;">${news.date}</div>
+          <div id="newsBlocksInner"></div>
+          <div style="margin-top:28px;">
+            <a class="news-btn" href="news.html">← 回到最新消息</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  const inner = document.getElementById("newsBlocksInner");
+
+  function renderBlock(b) {
+    if (b.type === "hero") {
+    return `
+        <figure style="margin:0 0 22px;">
+        <img class="news-img news-img--rounded" src="${b.img}" alt="${b.caption || ''}">
+        ${b.caption ? `<figcaption class="news-caption">${b.caption}</figcaption>` : ''}
+        </figure>
+    `;
+    }
+
+    if (b.type === "text") {
+      return `
+        <div style="margin: 0 0 18px; line-height:1.9; font-size:16px;">
+          ${b.html}
+        </div>`;
+    }
+
+    if (b.type === "gallery") {
+    const cols = b.cols || 2;
+
+    const imgs = (b.images || []).map(img =>
+        `<figure class="news-gallery-item">
+        <img class="news-gallery-img" 
+                src="${img.src}" 
+                alt="${img.caption || ''}">
+        ${img.caption ? `<figcaption class="news-caption">${img.caption}</figcaption>` : ''}
+        </figure>`
+    ).join("");
+
+    return `
+        <div class="news-gallery cols-${cols}">
+        ${imgs}
+        </div>`;
+    }
+
+    if (b.type === "image-right") {
+    return `
+        <div style="display:grid; grid-template-columns:1.1fr .9fr; gap:18px; align-items:start; margin: 22px 0;">
+        <div style="line-height:1.9; font-size:16px;">${b.html}</div>
+        <figure>
+            <img class="news-img news-img--rounded" src="${b.img}" alt="${b.caption || ''}">
+            ${b.caption ? `<figcaption class="news-caption">${b.caption}</figcaption>` : ''}
+        </figure>
+        </div>
+    `;
+    }
+
+    if (b.type === "quote") {
+      return `
+        <blockquote style="margin: 22px 0; padding: 16px 18px; background:#f5f7fa;
+          border-left:4px solid #32b29e; border-radius:12px; font-size:16px;">
+          ${b.text}
+        </blockquote>`;
+    }
+
+    if (b.type === "links-marquee") {
+    const items = (b.items || []);
+    if (!items.length) return "";
+
+    const track = items.map(it =>
+        `<a class="news-marquee__item" href="${it.href}" target="_blank" rel="noopener">${it.text}</a>`
+    ).join("");
+
+    // ✅ 複製一份，做無縫循環
+    return `
+        <div class="news-marquee">
+        <div class="news-marquee__label">媒體報導</div>
+        <div class="news-marquee__viewport">
+            <div class="news-marquee__track">
+            ${track}
+            ${track}
+            </div>
+        </div>
+        </div>
+    `;
+    }
+
+    return "";
+  }
+
+  (news.blocks || []).forEach(b => inner.insertAdjacentHTML("beforeend", renderBlock(b)));
+})();
+</script>

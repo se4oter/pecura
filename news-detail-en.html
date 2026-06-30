@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PECURA Technology | News</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+<div class="page-wrap">
+
+  <header class="header header--fixed">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="index-en.html"><img src="assets/img/logo1.png" alt=""/></a>
+        </div>
+
+        <div class="header__menu">
+          <nav class="onepage-nav">
+            <ul class="onepage-menu">
+              <li><a href="index-en.html#id-1">Home</a></li>
+                <li class="menu-item-has-children">
+                    <a href="about-en.html" class="menu-parent">
+                    About Us
+                    <i class="fa fa-angle-down menu-caret" aria-hidden="true"></i>
+                    </a>
+
+                    <ul class="sub-menu">
+                    <li><a href="about-en.html#about-company">About PECURA</a></li>
+                    <li><a href="about-en.html#vision-timeline">Milestone</a></li>
+                    <li><a href="about-en.html#team-members">Founding Team</a></li>
+                    <li><a href="about-en.html#cofounders">Operations Team</a></li>
+                    </ul>
+                </li>
+                <li><a href="news-en.html">News</a></li>
+                <li><a href="product-en.html">Products</a></li>
+                <li><a href="contact-en.html">Contact Us</a></li>
+            </ul>
+            <div class="navbar-toggle"><span></span><span></span><span></span></div>
+          </nav>
+
+          <div class="lang-switch">
+            <a href="news-detail.html" class="lang-btn">中</a>
+            <a href="news-detail-en.html" class="lang-btn is-active">EN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="md-content">
+
+    <section class="about-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h1 class="about-title">News</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="
+            position:absolute; right:-120px; top:-120px; width:360px; height:360px;
+            background: rgba(255,255,255,.08); border-radius: 999px; filter: blur(2px);
+        "></div>
+        <div style="
+            position:absolute; left:-140px; bottom:-140px; width:420px; height:420px;
+            background: rgba(255,255,255,.06); border-radius: 999px; filter: blur(2px);
+        "></div>
+    </section>
+
+
+    <div id="newsBlocks"></div>
+
+<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+<script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
+
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
+
+<script>
+(function () {
+  const root = document.getElementById("newsBlocks");
+  if (!root) return;
+
+  const data = {
+    "2": {
+      title: "PECURA Technology R&D Headquarters Grand Opening! Setting a New Benchmark for 1-Minute Cuffless Vascular Care",
+      date: "Oct 31, 2025",
+      blocks: [
+        {
+            type: "hero",
+            img: "assets/img/news/1/01-group.jpg",
+            caption: "Group photo at the official launch of PECURA Technology's R&D headquarters"
+        },
+
+        { 
+            type: "text", html: `
+            <p>On October 31, 2025, PECURA Technology, a spin-off startup from National Cheng Kung University (NCKU), officially opened its R&D headquarters at the NCKU Innovation Headquarters. The opening reception brought together nearly 60 distinguished guests from the medical, venture capital, financial, and academic sectors to witness the operational launch of the world's first "Non-invasive Smart Vascular Monitoring System".</p>`
+        },
+
+        { 
+        type: "image-right",
+        img: "assets/img/news/1/02-ribbon.jpg",
+        caption: "Ribbon-cutting ceremony for the R&D headquarters", 
+        html:`<h5 style="margin:0 0 10px;">Three Major Highlights of the Event:</h5>
+            <ul style="margin:0; padding-left:18px; line-height:1.9;">
+            <li><b>1-Minute Live Demo Impresses the Audience:</b> Showcased the world's first "Cuffless Clip Sensor". Integrating dual-mode PPG and ECG, the system accurately calculates PWV, vascular blockage, and vascular age within 1 minute. Its fast and convenient design received high praise.</li>
+            <li><b>Praised for "Unicorn" Potential:</b> Officials from NCKU and the Southern Taiwan Science Park highly recognized PECURA's technology and team, optimistic about its strong potential to become a unicorn company.</li>
+            <li><b>Commercialization Progress Attracts VC Attention:</b> The system has passed medical device electrical safety and biocompatibility tests. Clinical trials with NCKU Hospital are currently underway. We will continue to push for medical device certification, with official mass production slated for 2027!</li>
+            </ul>
+        `},
+
+        {
+        type: "gallery",
+        cols: 2,
+        images: [
+            {
+            src: "assets/img/news/1/03-ceo.jpg",
+            caption: "Speech by Wen-Ling Chen, CEO of PECURA Technology"
+            },
+            {
+            src: "assets/img/news/1/04-founder.jpg",
+            caption: "Speech by Prof. Ming-Long Yeh, Founder of PECURA Technology"
+            }
+        ]
+        },
+
+        { type: "text", html: `
+          <p>This opening reception received enthusiastic media attention and coverage, highly anticipated by the industry and the public. It was warmly reported by nearly 30 leading media outlets! Publications including CNA, Economic Daily News, United Daily News, Commercial Times, and Global Bio & Investment gave high praises, injecting a strong dose of confidence into Taiwan's smart healthcare industry.</p>
+          <p>PECURA Technology will use this R&D headquarters as a base to continue driving international regulatory certifications and commercial layouts. Click the links below to see more about the opening event and in-depth industry reports!</p>
+        `},
+
+        { type: "links-marquee", items: [
+        { text: "CNA", href: "https://www.cna.com.tw/news/ahel/202510310163.aspx" },
+        { text: "Economic Daily News", href: "https://money.udn.com/money/story/5723/9112825" },
+        { text: "United Daily News", href: "https://udn.com/news/story/7266/9109248" },
+        { text: "Commercial Times", href: "https://www.ctee.com.tw/news/20251102700239-431205" },
+        { text: "Global Bio & Investment", href: "https://news.gbimonthly.com/tw/invest/show.php?num=81169&range=news" },
+        { text: "OwlNews", href: "https://news.owlting.com/articles/1173454" },
+        { text: "LINE TODAY", href: "https://today.line.me/tw/v3/article/j7gDkjg" },
+        { text: "Yahoo! News", href: "https://reurl.cc/mkn6rl" },
+        { text: "Yam News", href: "https://n.yam.com/Article/20251031169385" },
+        { text: "PChome Online News", href: "https://news.pchome.com.tw/finance/sunmedia/20251031/index-76189827526012329003.html" },
+        { text: "Marketer", href: "https://reurl.cc/MMv164" },
+        { text: "Scoop Weekly", href: "https://www.scooptw.com/sunmedia/411398/%E5%81%B5%E8%84%88%E7%A7%91%E6%8A%80%E7%A0%94%E7%99%BC%E7%B8%BD%E9%83%A8%E7%9B%9B%E5%A4%A7%E9%96%8B%E5%B9%95-%E6%99%BA%E6%85%A7%E8%A1%80%E7%AE%A1%E7%9B%A3%E6%B8%AC%E9%A0%98%E8%88%AA%E5%85%A8%E7%90%83/" },
+        { text: "BizNews", href: "https://reurl.cc/Abqn4Y" },
+        { text: "LIFE NEWS", href: "https://lifenews.com.tw/423859/" },
+        { text: "LIFE", href: "https://life.tw/?app=view&no=2864823" },
+        { text: "Police News", href: "https://www.tcpttw.com/other/other_industrial/2025/10/31/213839/" },
+        { text: "New-Reporter", href: "https://new-reporter.com/news/91001/" },
+        { text: "Fire News", href: "https://reurl.cc/QVdnRp" },
+        { text: "AMM", href: "https://ammtw.com/90076" },
+        { text: "Shih News", href: "https://reurl.cc/8bG4X7" },
+        { text: "Hua News", href: "https://reurl.cc/rKxdvO" },
+        { text: "Taiwan Line 365", href: "https://twline365.com/2025/10/1061558/" },
+        { text: "More News", href: "https://more-news.tw/440771/" },
+        { text: "91post News", href: "https://91postnews.com/life/50808" },
+        { text: "Radio Shengli", href: "https://www.facebook.com/share/p/17QcU75HZx/?mibextid=wwXIfr" },
+        { text: "Fount Media", href: "https://www.fountmedia.io/article/319301" },
+        { text: "Share News", href: "https://share.google/gJe06K9FNXNFbMKYn" },
+        { text: "1111 Job Bank", href: "https://www.1111.com.tw/news/jobns/162966" },
+        { text: "Fast eNews", href: "http://fast-enews.com/?ptype=editor_1&id=38053&sys_no=4" }
+        ]},
+      ]
+    },
+    "3": {
+      title: "Medical-Grade Vascular Testing Reaches the Public: PECURA's 1-Minute Rapid Screening Technology Shows Huge Market Potential at Healthcare+ Expo 2025",
+      date: "Dec 7, 2025",
+      blocks: [
+        {
+          type: "hero",
+          img: "assets/img/news/2/01-medical-expo-demo.jpg",
+          caption: "PECURA Technology showcasing the Non-invasive Smart Vascular Monitoring System at the 2025 Healthcare+ Expo"
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>The 2025 Healthcare+ Expo recently kicked off with great fanfare, and PECURA Technology made a strong appearance with its highly anticipated "Non-invasive Smart Vascular Monitoring System". Diverging from traditional technical displays, the biggest highlight of this exhibition was the PECURA team allowing the public to personally experience this cutting-edge medical technology for the first time, successfully setting off a wave of enthusiasm for smart vascular health testing at the venue.</p>
+          `
+        },
+
+        {
+          type: "gallery",
+          cols: 2,
+          images: [
+            {
+              src: "assets/img/news/2/02-medical-expo-demo.jpg",
+              caption: "Team members assisting the public in experiencing the vascular health measurement process on-site"
+            },
+            {
+              src: "assets/img/news/2/03-medical-expo-demo.jpg",
+              caption: "Visitors getting a close look at the cuffless sensor and testing interface at the exhibition"
+            }
+          ]
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>During the exhibition, the PECURA Technology booth was bustling with endless streams of visitors lining up to participate in the testing. Experiencers only needed to gently clip the cuffless sensor to their fingertip, and within a short 1 minute, the system could quickly and accurately measure the degree of vascular stiffness and vascular age indicators. Many visitors highly praised the experience, stating that compared to traditional testing methods that require a tight arm cuff and are time-consuming, PECURA's product truly achieved a "painless, rapid, and zero-burden" process.</p>
+            <p>The enthusiastic on-site experience not only validated the product's ultimate comfort and operational convenience, but also attracted numerous visitors to proactively inquire about the expected launch schedule and purchasing channels, fully demonstrating the huge demand and urgent expectation of the end market for home vascular care equipment.</p>
+          `
+        },
+
+        {
+          type: "quote",
+          text: "Painless, rapid, and zero-burden."
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>Given the unprecedented success and enthusiastic response at this medical exhibition, the PECURA team will accelerate the system's medical device regulatory certification and mass production layout in the future. We look forward to popularizing this self-developed smart healthcare tool in Taiwan to the mass market as soon as possible, providing the most convenient daily cardiovascular health protection for every family.</p>
+          `
+        }
+      ]
+    },
+
+    "4": {
+      title: "PECURA Technology Wins the 22nd National Innovation Award: Original Cuffless Vascular Monitoring Technology Receives Highest National Recognition",
+      date: "Nov 15, 2025",
+      blocks: [
+        {
+          type: "hero",
+          img: "assets/img/news/3/01-award-group.jpg",
+          caption: "PECURA Technology team group photo at the 22nd National Innovation Award Ceremony"
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>The "22nd National Innovation Award", a prestigious indicator in Taiwan's biomedical sector, recently held its grand award ceremony. PECURA Technology stood out among many excellent teams with its world's first "Non-invasive Smart Vascular Monitoring System", successfully winning the highest national innovation honor, demonstrating deep industry-academia R&D strength and commercialization potential.</p>
+          `
+        },
+
+        {
+          type: "image-right",
+          img: "assets/img/news/3/02-award-group.jpg",
+          caption: "PECURA Technology receiving national innovation award recognition at the ceremony",
+          html: `
+            <p>The National Innovation Award judging panel spoke highly of PECURA Technology's breakthrough technology. PECURA precisely targeted the clinical pain points of traditional ABI testing instruments, developing its exclusive "cuffless clip-on sensing" technology.</p>
+            <p>The system combines Photoplethysmography (PPG) and Electrocardiogram (ECG) dual-mode integrated measurement, paired with AI algorithms. The subject only needs to use a finger clip for 1 minute to accurately calculate Pulse Wave Velocity (PWV) and vascular age.</p>
+          `
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>This technological advantage, combining "speed, painlessness, and high precision," became the key to winning the judges' favor this time.</p>
+          `
+        },
+
+        {
+          type: "quote",
+          text: "National innovation recognition stems from the combination of technological breakthroughs and clinical value."
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>Honored by the National Innovation Award, we will carry this glory to accelerate the clinical trials and global medical device regulatory certifications of the system. We hope to popularize this Taiwan-developed smart healthcare technology in global medical institutions and home care facilities, bringing a more user-friendly and efficient protective net for cardiovascular health.</p>
+          `
+        }
+      ]
+    },
+
+    "1": {
+      title: "PECURA Technology's Debut: Enthusiastic Response at BIO Asia-Taiwan 2025",
+      date: "Jul 2025",
+      blocks: [
+        {
+          type: "hero",
+          img: "assets/img/news/4/01-forum.jpg",
+          caption: "Founder of PECURA Technology delivering a keynote speech at the BIO Asia-Taiwan forum"
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>The 2025 BIO Asia-Taiwan recently concluded successfully, marking the first major public appearance of PECURA Technology, a spin-off from NCKU. During the exhibition, the PECURA team showcased the world's first "Non-invasive Smart Vascular Monitoring System", which became a major focal point at the venue.</p>
+          `
+        },
+
+        {
+          type: "image-right",
+          img: "assets/img/news/4/02-booth.jpg",
+          caption: "PECURA Technology's booth attracted many visitors and industry professionals for networking",
+          html: `
+            <p>During the exhibition, Prof. Ming-Long Yeh, founder of PECURA Technology, personally delivered a keynote speech at the forum area, explaining in simple terms the clinical pain points of traditional peripheral artery disease (PAD) testing, which is time-consuming and prone to causing patient discomfort.</p>
+            <p>He also shared PECURA's exclusively developed "cuffless clip-on sensing" technology, which only takes 1 minute to accurately estimate vascular age and blockage risk. The innovative testing concept sparked lively discussions on-site.</p>
+            <p>PECURA Technology's "Non-invasive Smart Vascular Monitoring System" not only significantly improves testing efficiency but also has high commercialization potential. During the exhibition, numerous domestic and foreign venture capital firms and large medical institutions visited the booth to discuss cooperation.</p>
+            `
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>Representatives from various sectors expressed high interest and willingness to cooperate on topics such as future clinical trial collaborations, the introduction of remote home care systems, and overseas market expansion.</p>
+          `
+        },
+
+        {
+          type: "quote",
+          text: "First public appearance instantly garnered high market and industry attention."
+        },
+
+        {
+          type: "text",
+          html: `
+            <p>This exhibition successfully demonstrated PECURA Technology's market momentum. In the future, we will continue to advance the product's medical certifications and commercial layout, looking forward to joining hands with more medical and investment partners to jointly build a new future for global peripheral vascular health care.</p>
+          `
+        }
+      ]
+    }
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+
+    if (!id) {
+    // 如果沒有 id，就不渲染 detail
+    return;
+    }
+  const news = data[id];
+
+  if (!news) {
+    root.innerHTML = "<div class='container' style='padding:60px 0; text-align:center;'>News article not found.</div>";
+    return;
+  }
+
+  // 外框（讓版面跟你 about 的 container 一致）
+  root.innerHTML = `
+    <div class="container news-detail-wrap" style="padding: 40px 0 10px;">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <h2 style="margin:0 0 8px; font-size:30px; line-height:1.25;">${news.title}</h2>
+          <div style="opacity:.75; margin-bottom:18px;">${news.date}</div>
+          <div id="newsBlocksInner"></div>
+          <div style="margin-top:28px;">
+            <a class="news-btn" href="news-en.html">← Back to News</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  const inner = document.getElementById("newsBlocksInner");
+
+  function renderBlock(b) {
+    if (b.type === "hero") {
+    return `
+        <figure style="margin:0 0 22px;">
+        <img class="news-img news-img--rounded" src="${b.img}" alt="${b.caption || ''}">
+        ${b.caption ? `<figcaption class="news-caption">${b.caption}</figcaption>` : ''}
+        </figure>
+    `;
+    }
+
+    if (b.type === "text") {
+      return `
+        <div style="margin: 0 0 18px; line-height:1.9; font-size:16px;">
+          ${b.html}
+        </div>`;
+    }
+
+    if (b.type === "gallery") {
+    const cols = b.cols || 2;
+
+    const imgs = (b.images || []).map(img =>
+        `<figure class="news-gallery-item">
+        <img class="news-gallery-img" 
+                src="${img.src}" 
+                alt="${img.caption || ''}">
+        ${img.caption ? `<figcaption class="news-caption">${img.caption}</figcaption>` : ''}
+        </figure>`
+    ).join("");
+
+    return `
+        <div class="news-gallery cols-${cols}">
+        ${imgs}
+        </div>`;
+    }
+
+    if (b.type === "image-right") {
+    return `
+        <div style="display:grid; grid-template-columns:1.1fr .9fr; gap:18px; align-items:start; margin: 22px 0;">
+        <div style="line-height:1.9; font-size:16px;">${b.html}</div>
+        <figure>
+            <img class="news-img news-img--rounded" src="${b.img}" alt="${b.caption || ''}">
+            ${b.caption ? `<figcaption class="news-caption">${b.caption}</figcaption>` : ''}
+        </figure>
+        </div>
+    `;
+    }
+
+    if (b.type === "quote") {
+      return `
+        <blockquote style="margin: 22px 0; padding: 16px 18px; background:#f5f7fa;
+          border-left:4px solid #32b29e; border-radius:12px; font-size:16px;">
+          ${b.text}
+        </blockquote>`;
+    }
+
+    if (b.type === "links-marquee") {
+    const items = (b.items || []);
+    if (!items.length) return "";
+
+    const track = items.map(it =>
+        `<a class="news-marquee__item" href="${it.href}" target="_blank" rel="noopener">${it.text}</a>`
+    ).join("");
+
+    // ✅ 複製一份，做無縫循環
+    return `
+        <div class="news-marquee">
+        <div class="news-marquee__label">Media Coverage</div>
+        <div class="news-marquee__viewport">
+            <div class="news-marquee__track">
+            ${track}
+            ${track}
+            </div>
+        </div>
+        </div>
+    `;
+    }
+
+    return "";
+  }
+
+  (news.blocks || []).forEach(b => inner.insertAdjacentHTML("beforeend", renderBlock(b)));
+})();
+</script>
