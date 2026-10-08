@@ -18,7 +18,12 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css"><!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+	<style>
+#latest-news { display:flex; flex-wrap:wrap; }
+#latest-news > .col-lg-4 { width:100%; margin-bottom:32px; }
+@media (min-width:992px) { #latest-news > .col-lg-4 { width:33.333333%; } }
+</style>
+</head>
 	
 	<body>
 		<div class="page-wrap">
@@ -202,44 +207,28 @@
 								
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-lg-4 ">
-								
-								<!--  -->
-								<div>
-									<div class="post__media"><a href="news-detail.html?id=4"><img src="assets/img/blog/1.jpg" alt=""/></a></div>
-									<div class="post__body">
-										<h2 class="post__title"><a href="news-detail.html?id=4">2025 國家新創獎得獎</a></h2>
-										<div class="post__meta"><span class="date">2025 年 12 月 17 日</span></div>
-									</div>
-								</div><!-- End /  -->
-								
-							</div>
-							<div class="col-lg-4 ">
-								
-								<!--  -->
-								<div>
-									<div class="post__media"><a href="news-detail.html?id=3"><img src="assets/img/blog/2.jpg" alt=""/></a></div>
-									<div class="post__body">
-										<h2 class="post__title"><a href="news-detail.html?id=3">參與 2025 醫療科技展</a></h2>
-										<div class="post__meta"><span class="date">2025 年 12 月 7 日</span></div>
-									</div>
-								</div><!-- End /  -->
-								
-							</div>
-							<div class="col-lg-4 ">
-								
-								<!--  -->
-								<div>
-									<div class="post__media"><a href="news-detail.html?id=2"><img src="assets/img/blog/3.jpg" alt=""/></a></div>
-									<div class="post__body">
-										<h2 class="post__title"><a href="news-detail.html?id=2">偵脈科技開幕典禮</a></h2>
-										<div class="post__meta"><span class="date">2025 年 10 月 31 日</span></div>
-									</div>
-								</div><!-- End /  -->
-								
-							</div>
-
+						<div class="row" id="latest-news" data-news-source="news.html">
+                <div class="col-lg-4">
+                    <div class="post__media"><a href="news-detail.html?id=9"><img src="assets/img/news/9/01-healthcare-exchange.jpg" alt="2026 智慧醫療產業跨域鏈結交流會，鏈結臨床需求與智慧醫療合作機會" loading="lazy"/></a></div>
+                    <div class="post__body">
+                        <h2 class="post__title"><a href="news-detail.html?id=9">2026 智慧醫療產業跨域鏈結交流會，鏈結臨床需求與智慧醫療合作機會</a></h2>
+                        <div class="post__meta"><span class="date">2026 年 9 月 30 日</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    
+                    <div class="post__body">
+                        <h2 class="post__title"><a href="news-detail.html?id=8">偵脈科技營運中心正式啟動，攜手產學與產業夥伴見證重要里程碑</a></h2>
+                        <div class="post__meta"><span class="date">2026 年 8 月 26 日</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="post__media"><a href="news-detail.html?id=7"><img src="assets/img/news/7/01-fiti.png" alt="偵脈科技入選 115-2 FITI 創新創業激勵計畫，持續加速技術商品化與市場布局" loading="lazy"/></a></div>
+                    <div class="post__body">
+                        <h2 class="post__title"><a href="news-detail.html?id=7">偵脈科技入選 115-2 FITI 創新創業激勵計畫，持續加速技術商品化與市場布局</a></h2>
+                        <div class="post__meta"><span class="date">2026 年 7 月 22 日</span></div>
+                    </div>
+                </div>
 						</div>
 
 						<div class="row">
@@ -337,5 +326,6 @@
 		<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
 		<!-- App-->
 		<script type="text/javascript" src="assets/js/main.js"></script>
+	<script src="assets/js/latest-news.js"></script>
 	</body>
 </html>

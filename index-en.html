@@ -12,7 +12,12 @@
 		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
-		<link rel="stylesheet" type="text/css" href="assets/css/main.css"></head>
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css"><style>
+#latest-news { display:flex; flex-wrap:wrap; }
+#latest-news > .col-lg-4 { width:100%; margin-bottom:32px; }
+@media (min-width:992px) { #latest-news > .col-lg-4 { width:33.333333%; } }
+</style>
+</head>
 	
 	<body>
 		<div class="page-wrap">
@@ -149,39 +154,33 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-lg-4 ">
-								<div>
-									<div class="post__media"><a href="news-detail.html?id=4"><img src="assets/img/blog/1.jpg" alt=""/></a></div>
-									<div class="post__body">
-										<h2 class="post__title"><a href="news-detail.html?id=4">Winner of 2025 National Innovation Award</a></h2>
-										<div class="post__meta"><span class="date">Dec 17, 2025</span></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 ">
-								<div>
-									<div class="post__media"><a href="news-detail.html?id=3"><img src="assets/img/blog/2.jpg" alt=""/></a></div>
-									<div class="post__body">
-										<h2 class="post__title"><a href="news-detail.html?id=3">Participating in Healthcare+ Expo 2025</a></h2>
-										<div class="post__meta"><span class="date">Dec 7, 2025</span></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 ">
-								<div>
-									<div class="post__media"><a href="news-detail.html?id=2"><img src="assets/img/blog/3.jpg" alt=""/></a></div>
-									<div class="post__body">
-										<h2 class="post__title"><a href="news-detail.html?id=2">PECURA Grand Opening Ceremony</a></h2>
-										<div class="post__meta"><span class="date">Oct 31, 2025</span></div>
-									</div>
-								</div>
-							</div>
+						<div class="row" id="latest-news" data-news-source="news-en.html">
+                <div class="col-lg-4">
+                    <div class="post__media"><a href="news-detail-en.html?id=9"><img src="assets/img/news/9/01-healthcare-exchange.jpg" alt="2026 Smart Healthcare Industry Exchange: Connecting Clinical Needs and Collaboration Opportunities" loading="lazy"/></a></div>
+                    <div class="post__body">
+                        <h2 class="post__title"><a href="news-detail-en.html?id=9">2026 Smart Healthcare Industry Exchange: Connecting Clinical Needs and Collaboration Opportunities</a></h2>
+                        <div class="post__meta"><span class="date">Sep 30, 2026</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    
+                    <div class="post__body">
+                        <h2 class="post__title"><a href="news-detail-en.html?id=8">PECURA Opens Its Operations Center, Marking a Milestone with Academic and Industry Partners</a></h2>
+                        <div class="post__meta"><span class="date">Aug 26, 2026</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="post__media"><a href="news-detail-en.html?id=7"><img src="assets/img/news/7/01-fiti.png" alt="PECURA Selected for the 2026 Second Cohort of FITI, Advancing Commercialization and Market Development" loading="lazy"/></a></div>
+                    <div class="post__body">
+                        <h2 class="post__title"><a href="news-detail-en.html?id=7">PECURA Selected for the 2026 Second Cohort of FITI, Advancing Commercialization and Market Development</a></h2>
+                        <div class="post__meta"><span class="date">Jul 22, 2026</span></div>
+                    </div>
+                </div>
 						</div>
 
 						<div class="row">
 							<div class="col-xs-12 text-right">
-								<a class="news-btn" href="news.html">Read More →</a>
+								<a class="news-btn" href="news-en.html">Read More →</a>
 							</div>
 						</div>
 					</div>
@@ -240,5 +239,6 @@
 		<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
 		<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
 		<script type="text/javascript" src="assets/js/main.js"></script>
+	<script src="assets/js/latest-news.js"></script>
 	</body>
 </html>
