@@ -3601,19 +3601,17 @@ ul {
     font-weight:600;
 }
 
+/* Both card rows contribute to the scroll area's height. */
 .timeline-alt{
+  --timeline-card-width: clamp(280px, 30vw, 420px);
   position: relative;
-
-  display: flex;
-  align-items: center;
-
-  gap: 0.3%;
-
+  display: grid;
+  grid-template-columns: repeat(9, calc(var(--timeline-card-width) / 2));
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 48px;
+  column-gap: 12px;
   overflow-x: auto;
-
-  padding: 2% 4%;
-
-  min-height: 90vh;
+  padding: 40px 4%;
 }
 
 #vision-timeline{
@@ -3621,188 +3619,104 @@ ul {
   padding-bottom: 20px !important;
 }
 
-/* 每個節點 */
-.tl-alt-item{
-  position: relative;
-
-  width: 20%;
-
-  flex-shrink: 0;
-
-  margin-left: -4%;
-}
-
-.tl-alt-item:first-child{
-  margin-left: 0;
-}
-
-/* 中線 */
 .timeline-alt:before{
-  content:"";
-  position:absolute;
-
-  top:50%;
-  left:0;
-  right:0;
-
-  height:0.35%;
-  width: 140%;
-  min-height:4px;
-
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: max(100%, calc(var(--timeline-card-width) * 4.5 + 96px + 8vw));
+  height: 4px;
   background: linear-gradient(to right,#32b29e,#3b7bdc);
-
   transform: translateY(-50%);
 }
 
+.tl-alt-item{
+  position: relative;
+  min-width: 0;
+}
 
-/* 上下交錯 */
+.tl-alt-item:nth-child(1){ grid-column: 1 / span 2; }
+.tl-alt-item:nth-child(2){ grid-column: 2 / span 2; }
+.tl-alt-item:nth-child(3){ grid-column: 3 / span 2; }
+.tl-alt-item:nth-child(4){ grid-column: 4 / span 2; }
+.tl-alt-item:nth-child(5){ grid-column: 5 / span 2; }
+.tl-alt-item:nth-child(6){ grid-column: 6 / span 2; }
+.tl-alt-item:nth-child(7){ grid-column: 7 / span 2; }
+.tl-alt-item:nth-child(8){ grid-column: 8 / span 2; }
+
 .tl-alt-item.top{
-  transform: translateY(-57%);
+  grid-row: 1;
+  align-self: end;
 }
 
 .tl-alt-item.bottom{
-  transform: translateY(57%);
+  grid-row: 2;
+  align-self: start;
 }
 
-/* 卡片 */
 .tl-alt-card{
-  background:#fff;
-
+  background: #fff;
   border-radius: 1rem;
-
   padding: 4%;
-
-  box-shadow:0 18px 40px rgba(0,0,0,.08);
-
-  text-align:center;
-
-  transition:.25s ease;
+  box-shadow: 0 18px 40px rgba(0,0,0,.08);
+  text-align: center;
+  transition: transform .25s ease;
 }
 
 .tl-alt-card:hover{
-  transform: translateY(-2%);
+  transform: translateY(-4px);
 }
 
-/* 圖片 */
 .tl-alt-card img{
-  width:100%;
-
+  width: 100%;
   aspect-ratio: 4 / 3;
-
-  object-fit:cover;
-
+  object-fit: cover;
   border-radius: .8rem;
-
   margin-bottom: 4%;
 }
- 
 
-/* 日期 */
 .tl-alt-date{
   font-size: 1rem;
-
-  font-weight:600;
-
-  color:#32b29e;
-
+  font-weight: 600;
+  color: #32b29e;
   margin-bottom: 2%;
 }
 
-/* 標題 */
 .tl-alt-card h5{
-  margin:0;
-
+  margin: 0;
   font-size: 2rem;
-
-  line-height:1.5;
-
-  font-weight:600;
+  line-height: 1.5;
+  font-weight: 600;
+  overflow-wrap: break-word;
 }
 
-/* 中線節點 */
 .tl-alt-item:before{
-  content:"";
-
-  position:absolute;
-
-  left:50%;
-
-  transform:translateX(-50%);
-
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 1rem;
   height: 1rem;
-
-  border-radius:999px;
-
-  background:#fff;
-
-  border:.3rem solid #32b29e;
-
-  z-index:2;
+  border-radius: 999px;
+  background: #fff;
+  border: .3rem solid #32b29e;
+  z-index: 2;
 }
 
-/* 上方卡片節點 */
 .tl-alt-item.top:before{
-  bottom:-8%;
+  top: calc(100% + 24px);
 }
 
-/* 下方卡片節點 */
 .tl-alt-item.bottom:before{
-  top:-8%;
+  top: -24px;
 }
 
-/* 最新 highlight */
 .tl-alt-item.highlight .tl-alt-card{
-  border:2px solid #e8b522;
+  border: 2px solid #e8b522;
 }
 
 .tl-alt-item.highlight:before{
-  border-color:#e8b522;
-}
-
-/* ===== Responsive ===== */
-
-@media (max-width: 991px){
-
-.timeline-alt{
-  position: relative;
-
-  display: flex;
-  align-items: center;
-
-  gap: 0.3%;
-
-  overflow-x: auto;
-
-  padding: 2% 4%;
-
-  min-height: 90vh;
-}
-
-#vision-timeline{
-  padding-top: 0px !important;
-  padding-bottom: 20px !important;
-}
-
-/* 每個節點 */
-.tl-alt-item{
-  position: relative;
-
-  width: 20%;
-
-  flex-shrink: 0;
-
-  margin-left: -4%;
-}
-
-  .tl-alt-item.top{
-    transform: translateY(-8%);
-  }
-
-  .tl-alt-item.bottom{
-    transform: translateY(8%);
-  }
-
+  border-color: #e8b522;
 }
 
 /* ==============================
